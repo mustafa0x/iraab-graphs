@@ -1,0 +1,76 @@
+/* Graph Styles */
+#graph {
+  font-size: 18px;
+  text-align: center;
+}
+#graph svg {
+  border: 1px dotted #ccc;
+}
+
+.word, .edge-lbl, .tag {
+  text-anchor: middle;
+}
+.edge-lbl {
+  font-size: 0.65em;
+}
+.edge, .arrow {
+  fill: none;
+}
+
+rect {
+  fill: rgba(255, 255, 255, 0.85);
+}
+
+/* Colors */
+/* Morphemes */
+.word {fill: pink}
+.word.DET {fill: gray}
+.word.PN {fill: #5f98ae;}
+.word.N {fill: steelblue;}
+.word.ADJ {fill: purple}
+.word.PRON {fill: #7d7f81;}
+.word.PRON.Suffix.SecondObject {fill: orange}
+.word.PRON.Suffix.SUBJ {fill: sky}
+.word.DEM {fill: brown}
+.word.REL, .word.SC, .word.PRP, .word.INT {fill: goldenrod;}
+.word.V {fill: seagreen;}
+.word.VOC {fill: green}
+.word.NEG, .word.PRO {fill: red}
+.word.P {fill: indianred}
+.word.INTG {fill: rose}
+.word.CONJ, .word.REM, .word.CIRC, .word.RSLT, .word.COM {fill: navy}
+.word.INL, .word.T, .word.LOC, .word.COND, .word.PREV {fill: orange}
+.word.filler {fill: lightgray; font-size: 0.8em;}
+.word.filler * {fill: lightgray;}
+/* Relations */
+.edge-grp {stroke: pink}
+.edge-grp.ADJ {stroke: purple}
+.edge-grp.APP, .edge-grp.POSS, .edge-grp.SUBJ, .edge-grp.PASS, .edge-grp.SPEC, .edge-grp.SUBJX, .edge-grp.CPND {stroke: steelblue;}
+.edge-grp.OBJ, .edge-grp.PREDX, .edge-grp.PRP, .edge-grp.PRED, .edge-grp.COM {stroke: #7d7f81}
+.edge-grp.GEN {stroke: indianred;}
+.edge-grp.LINK, .edge-grp.COND, .edge-grp.PREV {stroke: orange}
+.edge-grp.SUB, .edge-grp.INT {stroke: goldenrod}
+.edge-grp.COG, .edge-grp.CIRC {stroke: seagreen}
+.edge-grp.NEG, .edge-grp.PRO {stroke: red}
+.edge-grp.VOC {stroke: green}
+.edge-grp.INTG {stroke: rose}
+/* Edge labels */
+.edge-lbl {fill: pink}
+.edge-lbl.ADJ {fill: purple}
+.edge-lbl.APP, .edge-lbl.POSS, .edge-lbl.SUBJ, .edge-lbl.PASS, .edge-lbl.SPEC, .edge-lbl.SUBJX, .edge-lbl.CPND {fill: steelblue;}
+.edge-lbl.OBJ, .edge-lbl.PREDX, .edge-lbl.PRP, .edge-lbl.PRED, .edge-lbl.COM {fill: #7d7f81}
+.edge-lbl.GEN {fill: indianred;}
+.edge-lbl.LINK, .edge-lbl.COND, .edge-lbl.PREV {fill: orange}
+.edge-lbl.SUB, .edge-lbl.INT {fill: goldenrod}
+.edge-lbl.COG, .edge-lbl.CIRC {fill: seagreen}
+.edge-lbl.NEG, .edge-lbl.PRO {fill: red}
+.edge-lbl.VOC {fill: green}
+.edge-lbl.INTG {fill: rose}
+/* Phrases */
+.phrase { stroke: steelblue; }
+.S {fill: blue}
+.NS {fill: blue}
+.VS {fill: seagreen}
+.CS {fill: orange}
+.PP {fill: indianred}
+.SC {fill: goldenrod}

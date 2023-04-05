@@ -1,0 +1,41 @@
+<!doctype html>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>صلة أجزاء الكلام</title>
+<link rel=stylesheet href=style.css>
+
+<div class=container>
+<div id=graph><svg xmlns=http://www.w3.org/2000/svg></svg></div>
+
+<br>
+<textarea>
+    [
+        [ "(فعل)", "V" ],
+        [ "-بِ", "P" ],
+        [ "سْمِ", "N", 2, "GEN" ],
+        [ "ٱللَّهِ", "PN", 3, "POSS" ],
+        [ "ٱلرَّحْمٰنِ", "N", 4, "ADJ" ],
+        [ "ٱلرَّحِيمِ", "N", 4, "ADJ" ],
+        [ [ 2, 3 ], "PP", 1, "LINK" ]
+    ]
+</textarea>
+<button id=draw>ارسم</button>
+
+<br>
+<input type=number placeholder=السورة id=surah value=1>
+<input type=number placeholder=الآية id=ayah value=1>
+<button id=load>حمل</button> |
+<button id=save>حفظ</button> |
+<button id=save-all>حفظ الكل</button>
+
+<br>
+<!--
+<img src=graph.png><br>
+<img src=graph2.png><br>
+<img src=graph3.png>
+-->
+</div>
+
+<script src=d3.v4.min.js></script>
+<script src=depg.js></script>
+<script src=lib.js></script>
